@@ -5,3 +5,9 @@
     gap: 60px;
     list-style: none;
 }
+.navigation a{
+    color: #FF6060;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;    
+}
