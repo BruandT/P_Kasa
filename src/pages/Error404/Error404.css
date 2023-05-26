@@ -1,4 +1,4 @@
-main{
+.error-main{
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -7,19 +7,19 @@ main{
     font-style: normal;
     color: #FF6060;
 }
-h1{    
+.error-h1{    
     font-weight: 700;
     font-size: 288px;
     margin-top: 100px;
     margin-bottom: 0;
 }
-p{    
+.error-p{    
     font-weight: 500;
     font-size: 36px;
     margin-top: 20px;
     margin-bottom: 0;
 }
-button{
+.error-btn{
     color: #FF6060;
     border: none;
     background: none;
@@ -27,4 +27,23 @@ button{
     font-weight: 500;
     font-size: 18px;
     margin-top: 140px;
+}
+@media screen and (max-width: 767px) {
+    .error-h1{    
+        font-size: 96px;
+        line-height: 142.6%;
+        margin-top: 200px;
+    }
+    .error-p{  
+        margin: 0; 
+        font-size: 18px;
+        line-height: 142.6%;
+        text-align: center;
+    }
+    .error-btn{
+        font-size: 14px;
+        line-height: 142.6%;
+        margin-top: 130px;
+    }
+    
 }
