@@ -5,11 +5,11 @@ import "./Error404.css"
 function Error404(){
     return (
         <>
-        <main>
-        <h1>404</h1>
-        <p>Oups! La page que vous demandez n'existe pas.</p>
+        <main className='error-main'>
+        <h1 className='error-h1'>404</h1>
+        <p className='error-p'>Oups! La page que vous demandez n'existe pas.</p>
         <NavLink to="/home">
-            <button>Retourner sur la page d'accueil</button>
+            <button className='error-btn'>Retourner sur la page d'accueil</button>
         </NavLink>
         
         </main>
