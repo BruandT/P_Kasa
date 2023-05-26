@@ -11,3 +11,38 @@
     font-weight: 500;
     font-size: 24px;    
 }
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-active {
+    position: relative;    
+}
+.nav-active::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #FF6060;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+    left: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .navigation a{
+        font-size: 12px;
+        text-transform: uppercase;    
+    }
+    .navigation ul{
+        gap: 10px;
+    }
+    .navigation{
+        margin-top: 5px;
+    }
+    .nav-active::after {
+        height: 1px;
+        bottom: 1px;
+    }
+}
