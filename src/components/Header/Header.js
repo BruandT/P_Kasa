@@ -5,7 +5,7 @@ function Header() {
     return (
         <>
             <header>
-                <img src="" alt="Logo Kasa" />
+                <img src="./assets/logo/logo.jpg" alt="Logo Kasa" />
                 <Navigation />
             </header>
         </>
