@@ -14,8 +14,8 @@ function Home() {
     return (
         <>
         <main>        
-        <div id="main-top">  
-        <div id="main-top-overlay">      
+        <div id="main-top-home">  
+        <div className="main-top-overlay">      
         <h1 id="home-h1">Chez vous, partout et ailleurs</h1>
         </div>
         </div>

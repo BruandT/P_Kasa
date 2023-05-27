@@ -5,7 +5,7 @@ main{
     margin: 0 100px 0 100px
     
 }
-#main-top{
+#main-top-home{
     width: 100%;
     height: 223px;   
     margin-top: 60px; 
@@ -15,7 +15,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;   
 }
-#main-top-overlay{
+.main-top-overlay{
     width: 100%;
     height: 100%;
     display: flex;
@@ -47,7 +47,7 @@ main{
     main{
         margin: 0 20px 0 20px
     }
-    #main-top{
+    #main-top-home{
         height: 111px;   
         margin-top: 20px; 
         border-radius: 10px;
@@ -65,7 +65,7 @@ main{
         margin-left: 16px;
         line-height: 100%;
     }
-    #main-top-overlay{
+    .main-top-overlay{
         justify-content: start;
         align-items: center;
         border-radius: 10px;
