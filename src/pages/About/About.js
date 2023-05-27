@@ -1,12 +1,27 @@
 import React from 'react';
+import "./About.css"
+import Collapse from '../../components/Collapse/Collapse';
+import axios from 'axios';  
+import { useEffect, useState } from 'react';
 
 const About = () => {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        axios.get("./about.json").then((res) => setData(res.data))
+    })
+
     return (
-        <div>
-            <h1>A propos</h1>
-            <br />
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, officia odit? Ad, voluptate vero aspernatur aut perspiciatis consequatur aperiam explicabo, animi, inventore nihil possimus. Quos vel quisquam a maiores commodi!</p>
-        </div>
+        <>
+        <main>
+            <div id="main-top-about">
+            <div className="main-top-overlay"> 
+            </div>
+            </div>
+            {data.map((collapse, index) =>(
+                <Collapse key={index} name={collapse.name} description={collapse.description}/>
+            ))}
+        </main>
+        </>
     );
 };
 
