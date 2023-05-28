@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import "./Card.css"
 
-const Card = (location) => {
-   
+const Card = (data) => {   
     return (
         <>        
-        <div id='card-home'>  
-        <img id='card-img' src={location.img} alt={location.title} />  
+        <div id='card-home' key={data.id}>  
+        <Link to={{ pathname: "/logement", search: "?_id="+ data.id }}>            
+        <img id='card-img' src={data.img} alt={data.title} />  
         <div id="overlay"></div>    
-        <h2 id='card-h2'>{location.title}</h2>            
+        <h2 id='card-h2'>{data.title}</h2>   
+        </Link>         
         </div>
         </>
     );
