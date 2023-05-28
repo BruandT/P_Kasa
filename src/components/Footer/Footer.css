@@ -10,12 +10,13 @@ footer{
     background: #000000;
 }
 #p-footer{
-    margin-top: 35px;
+    margin-top: 45px;
     margin-bottom: 25px;
 }
 
 @media screen and (max-width: 767px) {
     footer{
         justify-content: center;
+        margin-top: 81px;
     }
 }
