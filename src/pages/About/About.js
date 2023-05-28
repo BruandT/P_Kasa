@@ -1,15 +1,9 @@
 import React from 'react';
 import "./About.css"
 import Collapse from '../../components/Collapse/Collapse';
-import axios from 'axios';  
-import { useEffect, useState } from 'react';
+import datas from "./About.json"
 
 const About = () => {
-    const [data, setData] = useState([]);
-    useEffect(() => {
-        axios.get("./about.json").then((res) => setData(res.data))
-    })
-
     return (
         <>
         <main>
@@ -17,9 +11,14 @@ const About = () => {
             <div className="main-top-overlay"> 
             </div>
             </div>
-            {data.map((collapse, index) =>(
-                <Collapse key={index} name={collapse.name} description={collapse.description}/>
-            ))}
+            {datas.map((data) =>{
+                const { id, title, description} = data;
+
+                return (
+                <Collapse key={id} name={title} description={description}/>
+                )
+
+                })}
         </main>
         </>
     );
