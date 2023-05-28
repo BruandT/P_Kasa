@@ -1,0 +1,61 @@
+.carousel {
+    position: relative;
+    height: 415px;
+    width: 100%;
+    margin-top: 30px;
+}
+.carousel p {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 340px;
+    text-align: center;
+}
+.class-image {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.carousel button {
+    border: none;
+    background-color: transparent;
+    display: hidden;
+    color: #fff;
+}
+.chevron-gauche{
+    position: absolute;
+    height: 80px;
+    top: 40%;
+    cursor: pointer;
+    left: 20px;
+}
+.chevron-droit {
+    position: absolute;
+    height: 80px;
+    top: 40%;
+    cursor: pointer;
+    left: calc(100% - 70px);
+}
+@media screen and (max-width: 767px) {
+    .carousel {
+        height: 255px;
+    }
+    .chevron-droit,.chevron-gauche{
+        height: 20px;
+        top: 45%;
+    }
+    .chevron-gauche{
+        left: 10px;
+    }
+    .chevron-droit{
+        left: calc(100% - 25px);
+    }
+    .carousel p {
+        display: none;
+    }
+}
