@@ -1,15 +1,9 @@
-import { useEffect, useState } from 'react';
 import Card from '../../components/Card/Card';
-import "./Home.css"
-import axios from 'axios';  
+import "./Home.css";
+import datas from "../data.json";
 
 
-function Home() {   
-    const [data, setData] = useState([]);
-    useEffect(() => {
-        axios.get("./data.json").then((res) => setData(res.data))
-    })
-   
+function Home() {    
     
     return (
         <>
@@ -20,9 +14,14 @@ function Home() {
         </div>
         </div>
         <div id="main-bottom">
-            {data.map((location, index) =>(
-                <Card key={index} title={location.title} img={location.cover}/>
-            ))}
+
+        {datas.map((data) =>{
+                const { id, title, cover} = data;
+
+                return (            
+                <Card id={id} title={title} img={cover}/>
+                )
+        })}
         </div>
         </main>
         </>
