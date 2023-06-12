@@ -1,7 +1,7 @@
 import React from 'react';
 import "./About.css"
 import Collapse from '../../components/Collapse/Collapse';
-import datas from "./About.json"
+import datas from "../../data/about.json"
 
 const About = () => {
     return (

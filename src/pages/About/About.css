@@ -15,7 +15,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;   
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 880px) {
     main{
         margin: 0 20px 0 20px
     }
