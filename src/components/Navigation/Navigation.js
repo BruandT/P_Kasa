@@ -6,9 +6,11 @@ const Navigation = () => {
     return (
         <div className="navigation">
             <ul>
-                <NavLink to="/home" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                {/* Ajout de la classe nav-active au clique, permet de sous-ligner l'element */}
+                <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <li>Accueil</li>
                 </NavLink>
+                {/* Ajout de la classe nav-active au clique, permet de sous-ligner l'element */}
                 <NavLink to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <li>A Propos</li>
                 </NavLink>

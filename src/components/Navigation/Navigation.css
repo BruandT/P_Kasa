@@ -30,7 +30,7 @@
     left: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 880px) {
     .navigation a{
         font-size: 12px;
         text-transform: uppercase;    
