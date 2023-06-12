@@ -32,14 +32,14 @@
     color: #FF6060;
 }
 .collapse-container{    
-    width: 1020px;
+    width: 100%;
     border-radius: 5px;
     border: none;   
     margin-top: 33px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 880px) {
     .collapse-container{    
-        width: 335px;
+        width: 100%;
         margin-top: 20px;
     }
     .collapse{
