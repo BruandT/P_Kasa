@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/votre_nom_de_depot/static/css/main.75f07802.css",
+    "main.js": "/votre_nom_de_depot/static/js/main.6d85a707.js",
+    "static/media/banner-about.jpg": "/votre_nom_de_depot/static/media/banner-about.e54ae93d36cfba861b65.jpg",
+    "static/media/banner-home.jpg": "/votre_nom_de_depot/static/media/banner-home.61352a7ae7ebff30e925.jpg",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/votre_nom_de_depot/static/media/Montserrat-VariableFont_wght.c28a96c369871653b853.ttf",
+    "index.html": "/votre_nom_de_depot/index.html",
+    "main.75f07802.css.map": "/votre_nom_de_depot/static/css/main.75f07802.css.map",
+    "main.6d85a707.js.map": "/votre_nom_de_depot/static/js/main.6d85a707.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75f07802.css",
+    "static/js/main.6d85a707.js"
+  ]
+}
