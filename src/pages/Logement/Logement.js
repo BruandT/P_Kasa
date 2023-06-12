@@ -1,67 +1,82 @@
-import React, { useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import React, { useEffect, useState} from 'react';
 import Collapse from '../../components/Collapse/Collapse';
 import Carousel from '../../components/Carousel/Carousel';
+import { useParams } from 'react-router-dom';
+import Star from '../../components/Star/Star'
 import "./Logement.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import datas from "../data.json"
+import datas from "../../data/data.json"
+import Error from "../../pages/Error404/Error404"
+import Tag from '../../components/Tag/Tag';
 
-library.add(faStar);
-
-const stars = [1, 2, 3, 4, 5]
 
 function Logement() {
-    const [searchParams] = useSearchParams();
-    const [idLogement] = useState(searchParams.get('_id'));
-    
-    const data = datas.find(element => element.id === idLogement)
 
-    const stuffList = data.equipments.map((element, index) => (
-          <li className='description-content' key={"stuff-"+index.toString()}>{element}</li>
+    
+    const { id } = useParams();
+    
+    
+    useEffect(() => {
+        datas.map((house) => {
+            if (house.id === id) {
+                setLogement(house);
+            }
+            return null;
+        });
+    }, [id]);
+    
+    const [logement, setLogement] = useState({
+        tags: [],
+        equipments: [],
+        pictures: [],
+        rating: "",
+        host: { name: "", picture: "" },
+    });
+    
+    if (logement.title === undefined) {
+        return <Error />;
+    }
+    
+    
+    const stuffList = logement.equipments.map((element, index) => (
+        <li className='description-content' key={"stuff-"+index.toString()}>{element}</li>
         ))
-    
-
-    return (
-        <>
-        <main>
-                <Carousel pictures={data.pictures}/>
-
-                <div id='top-description'>
-                    <div id='right-side-logement'>
-                        <h1 id='h1-logement'>{data.title}</h1>
-                        <h2 id='h2-logement'>{data.location}</h2>
-                        <div id='div-tags'>
-                            { data.tags.map((element, index) => {
-                                return(<p className='tags' key={"tags-"+index}>{element}</p>)
-                            })}
-                        </div>
-                    </div>
-
-                    <div id='left-side-logement'>
-                        <div id='profil-propio'>
-                            <p>{data.host.name}</p>
-                            <img src={data.host.picture} alt={data.title} />
-                        </div>
-                        
-                        <div className='stars'>
-                            {
-                                stars.map(element => {
-                                    const starsNbr = parseInt(data.rating)
-                                    return(<span key={"star-"+element} className={element <= starsNbr ? 'span-color' : 'span-uncolor'}><FontAwesomeIcon icon={faStar} /></span>)
-                                })
-                            }
-                        </div>
-                    </div>
+        
+        
+        return (
+            <>
+            <main>
+            <Carousel pictures={logement.pictures}/>
+            
+            <div id='top-description'>
+            <div id='right-side-logement'>
+            <h1 id='h1-logement'>{logement.title}</h1>
+            <h2 id='h2-logement'>{logement.location}</h2>
+            <div id='div-tags'>
+            
+            {logement.tags.map((tag, index) => (
+                <Tag key={index} tag={tag}/>
+                ))}
                 </div>
-                <div id='collapse-logement'>
-                    <Collapse name="Description" description={data.description} />
-                    <Collapse name="Equipements" description={stuffList} />
-                </div>
-        </main>
-        </>
-    )
-}
-
-export default Logement
+            </div>
+            
+            <div id='left-side-logement'>
+            <div id='profil-propio'>
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture} alt={logement.title} />
+            </div>
+            
+            <div className='stars'>
+            <Star rating={logement.rating}/>
+            </div>
+            </div>
+            </div>
+            <div id='collapse-logement'>
+            <Collapse name="Description" description={logement.description} />
+            <Collapse name="Equipements" description={stuffList} />
+            </div>
+            </main>
+            </>
+            )
+        }
+        
+        export default Logement

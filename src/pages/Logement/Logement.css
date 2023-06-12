@@ -64,17 +64,7 @@
     height: 64px;
     border-radius: 50%;
 }
-.stars {
-    display: flex;
-    font-size: 30px;
-    gap: 10px;
-}
-.span-color {
-    color: #FF6060;
-}
-.span-uncolor {
-    color: #E3E3E3;
-}
+
 #collapse-logement {
     display: flex;
     flex-direction: row;
@@ -94,7 +84,7 @@
     padding-bottom: 30px;
     border-radius:  0  0 10px 10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 880px) {
     #top-description {
         flex-direction: column;
         margin-top: 15px;
@@ -128,10 +118,6 @@
     #left-side-logement  img {
         width: 32px;
         height: 32px;
-    }
-    .stars {
-        font-size: 18px;
-        gap: 6px;
     }
     #collapse-logement {
         flex-direction: column;
