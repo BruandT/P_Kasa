@@ -1,6 +1,6 @@
 import Card from '../../components/Card/Card';
 import "./Home.css";
-import datas from "../data.json";
+import datas from "../../data/data.json";
 
 
 function Home() {    
@@ -15,11 +15,11 @@ function Home() {
         </div>
         <div id="main-bottom">
 
-        {datas.map((data) =>{
+        {datas.map((data, index) =>{
                 const { id, title, cover} = data;
 
                 return (            
-                <Card id={id} title={title} img={cover}/>
+                <Card key={index} id={id} title={title} img={cover}/>
                 )
         })}
         </div>
