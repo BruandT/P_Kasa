@@ -13,10 +13,9 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route element={<LayoutDefault />} >
-                    <Route path="/home" element={<Home />} />
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/logement" element={<Logement />} />
+                    <Route path="/logement/:id" element={<Logement />} />
                 </Route>
 
                 <Route element={<LayoutBlank />} >
