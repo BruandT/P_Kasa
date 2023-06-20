@@ -11,15 +11,15 @@ library.add(faChevronUp, faChevronDown);
 const Collapse = (data) => {
   // Pour que les collapses soit toujours fermé
   const [isCollapsed, setIsCollapsed] = useState(true);
-
+  
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
   };
-
+  
   return (
     <>
     <div className='collapse-container'>
-      {/* Ouverture des collapses */}
+    {/* Ouverture des collapses */}
     <button className='collapse' onClick={toggleCollapse}>
     {isCollapsed ? (
       <>
@@ -34,7 +34,7 @@ const Collapse = (data) => {
         {!isCollapsed && <div className='div-collapse'>{data.description}</div>}
         </div>
         </>
-  );
-};
-
-export default Collapse;
+        );
+      };
+      
+      export default Collapse;

@@ -23,7 +23,7 @@ function Logement() {
             return null;
         });
     }, [id]);
-    
+     
     const [logement, setLogement] = useState({
         tags: [],
         equipments: [],
