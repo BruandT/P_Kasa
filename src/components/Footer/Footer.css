@@ -6,15 +6,14 @@ footer{
     display: flex; 
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     background: #000000;
 }
 #p-footer{
     margin-top: 45px;
     margin-bottom: 25px;
 }
-
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 894px) {
     footer{
         justify-content: center;
         margin-top: 81px;

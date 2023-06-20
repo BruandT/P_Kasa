@@ -26,11 +26,10 @@
     background: #FF6060;
     position: absolute;
     border-radius: 10px;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
 }
-
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 894px) {
     .navigation a{
         font-size: 12px;
         text-transform: uppercase;    

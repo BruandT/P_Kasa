@@ -7,8 +7,7 @@ header img{
     width: 210px;
     height: 68px;
 }
-
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 894px) {
     header{
         margin: 20px 20px 0 20px;
     }

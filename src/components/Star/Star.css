@@ -9,7 +9,7 @@
 .span-uncolor {
     color: #E3E3E3;
 }
-@media screen and (max-width: 880px) {    
+@media screen and (max-width: 894px) {    
     .stars {
         font-size: 18px;
         gap: 6px;
