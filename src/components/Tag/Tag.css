@@ -9,7 +9,7 @@
     color: white;
     border-radius: 10px;
 }
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 932px){
     .tags {
         padding: 2px 30px;
         margin: 10px 10px 0 0;

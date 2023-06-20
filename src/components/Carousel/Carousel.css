@@ -40,7 +40,7 @@
     cursor: pointer;
     left: calc(100% - 70px);
 }
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 932px){
     .carousel {
         height: 255px;
     }

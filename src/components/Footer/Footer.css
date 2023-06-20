@@ -13,7 +13,7 @@ footer{
     margin-top: 45px;
     margin-bottom: 25px;
 }
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 932px){
     footer{
         justify-content: center;
         margin-top: 81px;

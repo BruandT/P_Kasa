@@ -26,7 +26,7 @@
     font-size: 18px;
     margin-top: 140px;
 }
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 932px){
     .error-h1{    
         font-size: 96px;
         line-height: 142.6%;

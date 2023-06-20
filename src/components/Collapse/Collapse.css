@@ -33,7 +33,7 @@
     border: none;   
     margin-top: 33px;
 }
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 932px){
     .collapse-container{    
         width: 100%;
         margin-top: 20px;

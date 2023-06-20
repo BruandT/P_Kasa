@@ -14,7 +14,7 @@ main{
 #main-bottom-about{
     width: 90%;
 }
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 932px){
     main{
         margin: 0 20px 0 20px
     }

@@ -27,19 +27,19 @@ main{
     color: #fff;
 }
 #main-bottom{    
-    width: 100%;
+    width: 95%;
     display: grid;
     justify-items: center;
-    padding: 56px 0;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 2%;
+    padding: 56px 2.5%;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));  
+    column-gap: 2%; 
     grid-auto-rows: 340px;
     grid-row-gap: 45px;      
     margin-top: 43px;
     background: #F7F7F7;
     border-radius: 25px;
 }
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 932px){
     main{
         margin: 0 20px 0 20px
     }
@@ -49,6 +49,7 @@ main{
         border-radius: 10px;
     }
     #main-bottom{
+        width: 100%;
         grid-template-columns: repeat(1, 100%);
         grid-auto-rows: 255px;
         grid-row-gap: 20px; 

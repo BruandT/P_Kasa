@@ -70,7 +70,7 @@
     padding-bottom: 30px;
     border-radius:  0  0 10px 10px;
 }
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 932px){
     #top-description {
         flex-direction: column;
         margin-top: 15px;
