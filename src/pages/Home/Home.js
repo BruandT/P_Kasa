@@ -8,12 +8,12 @@ function Home() {
     return (
         <>
         <main>        
-        <div id="main-top-home">  
+        <div className="main-top-home">  
         <div className="main-top-overlay">      
-        <h1 id="home-h1">Chez vous, partout et ailleurs</h1>
+        <h1 className="home-h1">Chez vous, partout et ailleurs</h1>
         </div>
         </div>
-        <div id="main-bottom">
+        <div className="main-bottom">
 
         {datas.map((data, index) =>{
                 const { id, title, cover} = data;

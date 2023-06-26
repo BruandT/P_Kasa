@@ -47,11 +47,11 @@ function Logement() {
             <main>
             <Carousel pictures={logement.pictures}/>
             
-            <div id='top-description'>
-            <div id='right-side-logement'>
-            <h1 id='h1-logement'>{logement.title}</h1>
-            <h2 id='h2-logement'>{logement.location}</h2>
-            <div id='div-tags'>
+            <div className='top-description'>
+            <div className='right-side-logement'>
+            <h1 className='h1-logement'>{logement.title}</h1>
+            <h2 className='h2-logement'>{logement.location}</h2>
+            <div className='div-tags'>
             
             {logement.tags.map((tag, index) => (
                 <Tag key={index} tag={tag}/>
@@ -59,8 +59,8 @@ function Logement() {
                 </div>
             </div>
             
-            <div id='left-side-logement'>
-            <div id='profil-propio'>
+            <div className='left-side-logement'>
+            <div className='profil-propio'>
             <p>{logement.host.name}</p>
             <img src={logement.host.picture} alt={logement.title} />
             </div>
@@ -70,7 +70,7 @@ function Logement() {
             </div>
             </div>
             </div>
-            <div id='collapse-logement'>
+            <div className='collapse-logement'>
             <Collapse name="Description" description={logement.description} />
             <Collapse name="Equipements" description={stuffList} />
             </div>

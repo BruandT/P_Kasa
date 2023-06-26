@@ -9,7 +9,7 @@ footer{
     justify-content: flex-end;
     background: #000000;
 }
-#p-footer{
+.p-footer{
     margin-top: 45px;
     margin-bottom: 25px;
 }

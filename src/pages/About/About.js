@@ -7,10 +7,10 @@ const About = () => {
     return (
         <>
             <main>
-                <div id="main-top-about">
+                <div className="main-top-about">
                     <div className="main-top-overlay"></div>
                 </div>
-                <div id="main-bottom-about">
+                <div className="main-bottom-about">
                     {datas.map((data) => {
                         const { id, title, description } = data;
                         return (

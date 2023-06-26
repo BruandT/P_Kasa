@@ -4,8 +4,8 @@ import "./Footer.css"
 const Footer = () => {
     return (
         <footer>            
-        <img id='logo-footer' src="./assets/logo/logo-footer.png" alt="Logo Kasa" />
-        <p id='p-footer'>© 2020 Kasa. All rights reserved</p>            
+        <img className='logo-footer' src="./assets/logo/logo-footer.png" alt="Logo Kasa" />
+        <p className='p-footer'>© 2020 Kasa. All rights reserved</p>            
         </footer>
         );
     };

@@ -1,30 +1,30 @@
-#top-description {
+.top-description{
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
-#right-side-logement{
+.ight-side-logement{
     width: 100%;
 }
-#h1-logement,#h2-logement{
+.h1-logement,.h2-logement{
     font-weight: 500;
     line-height: 142.6%;
     color: #FF6060;
 }
-#h1-logement{
+.h1-logement{
     font-size: 36px;
 }
-#h2-logement{
+.h2-logement{
     font-size: 18px;
 }
-#div-tags {
+.div-tags{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
-#left-side-logement {
+.left-side-logement{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -32,12 +32,12 @@
     gap: 10px;
     width: 60%;
 }
-#profil-propio{
+.profil-propio{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-#left-side-logement  p {
+.left-side-logement  p{
     display: flex;
     text-align: right;
     font-size: 18px;
@@ -46,12 +46,12 @@
     color: #FF6060;
     align-items: center;
 }
-#left-side-logement  img {
+.left-side-logement  img{
     width: 64px;
     height: 64px;
     border-radius: 50%;
 }
-#collapse-logement {
+.collapse-logement{
     display: flex;
     flex-direction: row;
     gap: 76px;
@@ -60,29 +60,29 @@
 .description-content{
     list-style: none;
 }
-#collapse-logement .collapse{
+.collapse-logement .collapse{
     font-size: 18px;
     border-radius: 10px;    
 }
-#collapse-logement .div-collapse{
+.collapse-logement .div-collapse{
     font-size: 18px;
     line-height: 142.6%;
     padding-bottom: 30px;
     border-radius:  0  0 10px 10px;
 }
 @media screen and (max-width: 932px){
-    #top-description {
+    .top-description {
         flex-direction: column;
         margin-top: 15px;
     }
-    #h1-logement{
+    .h1-logement{
         font-size: 18px;
     }
-    #h2-logement{
+    .h2-logement{
         font-size: 14px;
         margin-top: 10px;
     }    
-    #left-side-logement {
+    .left-side-logement{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -90,23 +90,23 @@
         width: auto;
         margin-top: 15px;
     }
-    #left-side-logement  p {
+    .left-side-logement  p{
         font-size: 12px;
         width: 53px;
     }
-    #left-side-logement  img {
+    .left-side-logement  img{
         width: 32px;
         height: 32px;
     }
-    #collapse-logement {
+    .collapse-logement{
         flex-direction: column;
         gap: 0;
     }
-    #collapse-logement .collapse{
+    .collapse-logement .collapse{
         font-size: 13px;
         border-radius: 5px;    
     }
-    #collapse-logement .div-collapse{
+    .collapse-logement .div-collapse{
         font-size: 12px;
         padding-bottom: 5px;
         padding-left: 10px;
