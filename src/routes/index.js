@@ -20,9 +20,11 @@ const Router = () => {
 
                 <Route element={<LayoutBlank />} >
                     <Route path="*" element={<Error404 />} />
+                    <Route path="/error" element={<Error404 />} />
                 </Route>
             </Routes>
         </BrowserRouter>
+        
     )
 }
 
